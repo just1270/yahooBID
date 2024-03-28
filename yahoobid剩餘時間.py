@@ -19,8 +19,8 @@ print(driver.title)
 soup = BeautifulSoup(driver.page_source, "lxml")
 tag_names = soup.find_all("span", class_="sc-dlGagL sc-gKBqHi sc-1drl28c-5 gkgFep iSWDmq hnGvZF") #商品名稱
 target_prices = soup.find_all("span", class_="sc-dlGagL sc-gKBqHi dkipYY cWhwYS")                 #價格
-target_hr = soup.find_all("span", class_="sc-dlGagL fwhVVE")        #時
-target_min = soup.find_all("span", class_="sc-1w447g0-0 qOhjp")      #分
+target_hr = soup.find_all("span", class_="sc-dlGagL iotmEd")        #時
+#target_min = soup.find_all("span", class_="sc-1w447g0-0 qOhjp")      #分
                                                                                     #剩餘時間
  
 for tag_name, target_price, target_hr  in zip(tag_names, target_prices, target_hr):
@@ -37,8 +37,8 @@ print(driver.title)
 soup = BeautifulSoup(driver.page_source, "lxml")
 tag_names = soup.find_all("span", class_="sc-dlGagL sc-gKBqHi sc-1drl28c-5 gkgFep iSWDmq hnGvZF") #商品名稱
 target_prices = soup.find_all("span", class_="sc-dlGagL sc-gKBqHi dkipYY cWhwYS")                 #價格
-target_hr = soup.find_all("span", class_="sc-dlGagL fwhVVE")        #時
-target_min = soup.find_all("span", class_="sc-1w447g0-0 qOhjp")      #分
+target_hr = soup.find_all("span", class_="sc-dlGagL iotmEd")        #時
+#target_min = soup.find_all("span", class_="sc-1w447g0-0 qOhjp")      #分
                                                                                     #剩餘時間
  
 for tag_name, target_price, target_hr  in zip(tag_names, target_prices, target_hr):
